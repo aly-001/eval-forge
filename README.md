@@ -2,7 +2,7 @@
 
 # Model Evaluation Framework
 
-An open-source tool to help you evaluate different LLMs and prompts for your specific use case using OpenRouter.
+An open-source tool to help you evaluate LLMs and prompts for your specific use case using OpenRouter.
 
 ## Features
 
@@ -43,3 +43,21 @@ An open-source tool to help you evaluate different LLMs and prompts for your spe
 The application uses two configuration files:
 - `.env` - For sensitive data like API keys (not tracked in git)
 - `config.yaml` - For application settings like model choice and prompts
+
+# Vision
+
+## Current 
+
+### Processes Openrouter agents
+
+### Example use cases
+- Testing accuracy of a search model, like perplexity sonar-pro
+- Ensuring a customer service bot maintains appropriate tone
+
+## Future capabilities 
+
+### Be able to jumpstart an evaluator for testing complex agents
+### Developers can focus purely on writing a clever eval function and providing the sample data.
+### Also, I want to create a diverse library of templates. For example, a coding ability assessment eval function, or an MCP evaluator for AI agents. I also want to be able to collect templates from other devs so that people can add their own eval functions and templates to the library.
+
+## This could be useful for something like Theoriq.ai where creating hundreds of custom evaluators for agents is large part of the business model. It could integrate with Theoriq SDK, manage hashing, etc.
