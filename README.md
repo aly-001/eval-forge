@@ -44,20 +44,31 @@ The application uses two configuration files:
 - `.env` - For sensitive data like API keys (not tracked in git)
 - `config.yaml` - For application settings like model choice and prompts
 
-# Vision
+## Vision
 
-## Current 
+### Current Capabilities
 
-### Processes Openrouter agents
+Currently, this framework processes OpenRouter agents and provides a foundation for LLM evaluation.
 
-### Example use cases
-- Testing accuracy of a search model, like perplexity sonar-pro
+**Example use cases:**
+- Testing accuracy of a search model, like Perplexity Sonar-Pro
 - Ensuring a customer service bot maintains appropriate tone
+- Evaluating prompt effectiveness across different models
 
-## Future capabilities 
+### Future Roadmap
 
-### Be able to jumpstart an evaluator for testing complex agents
-### Developers can focus purely on writing a clever eval function and providing the sample data.
-### Also, I want to create a diverse library of templates. For example, a coding ability assessment eval function, or an MCP evaluator for AI agents. I also want to be able to collect templates from other devs so that people can add their own eval functions and templates to the library.
+**Core Goals:**
+- **Quick evaluator setup**: Jumpstart an evaluator for testing complex agents with minimal configuration
+- **Developer-focused**: Allow developers to focus purely on writing clever eval functions and providing sample data
+- **Template library**: Create a diverse library of evaluation templates including:
+  - Coding ability assessment functions
+  - MCP evaluators for AI agents
+  - Custom evaluation templates from the community
+- **Community contributions**: Enable developers to add their own eval functions and templates to the library
 
-## This could be useful for something like Theoriq.ai where creating hundreds of custom evaluators for agents is large part of the business model. It could integrate with Theoriq SDK, manage hashing, etc.
+### Enterprise Integration
+
+This framework could be particularly useful for platforms like Theoriq.ai, where creating hundreds of custom evaluators for agents is a core part of the business model. Potential integrations include:
+- Theoriq SDK compatibility
+- Hashing and caching mechanisms for crypto style communication and reputation scores
+- Custom metric tracking
