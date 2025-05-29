@@ -17,8 +17,8 @@ An open-source tool to help you evaluate different LLMs and prompts for your spe
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/model-eval-framework.git
-   cd model-eval-framework
+   git clone https://github.com/aly-001/eval-forge
+   cd eval-forge
    ```
 
 2. **Install dependencies**
