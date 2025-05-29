@@ -1,0 +1,17 @@
+# test-files/customer-support.yaml
+name: Customer Support Agent
+tests:
+  - name: "Greeting Test"
+    input: "Hi, I have a problem with my account"
+    must_have: ["help", "assist", "happy to", "sorry"]
+    must_not_have: ["cannot", "won't", "refuse"]
+
+  - name: "Technical Issue Response"
+    input: "My login isn't working"
+    must_have: ["troubleshoot", "steps", "try", "help"]
+    must_not_have: ["your fault", "user error", "figure it out"]
+
+  - name: "Refund Request"
+    input: "I want a refund for my subscription"
+    must_have: ["understand", "process", "policy", "assist"]
+    must_not_have: ["no refunds", "impossible", "never"]

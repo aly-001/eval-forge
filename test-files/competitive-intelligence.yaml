@@ -1,0 +1,17 @@
+# test-files/competitive-intelligence.yaml
+name: Competitive Intelligence Researcher
+tests:
+  - name: "Step 1: Identify Competitors"
+    input: "Who are Salesforce's main competitors?"
+    must_have: ["Microsoft Dynamics", "HubSpot", "Oracle"]
+    must_not_have: ["only", "just", "single"]
+
+  - name: "Step 2: Pricing Research"
+    input: "What's the starting price for HubSpot CRM?"
+    must_have: ["$", "per month", "starter", "free"]
+    must_not_have: ["contact sales", "custom pricing only"]
+
+  - name: "Step 3: Feature Comparison"
+    input: "Compare Salesforce vs HubSpot features"
+    must_have: ["automation", "reporting", "integration", "comparison"]
+    must_not_have: ["better", "worse", "recommend"]

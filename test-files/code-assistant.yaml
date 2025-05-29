@@ -1,0 +1,17 @@
+# test-files/code-assistant.yaml
+name: Code Assistant
+tests:
+  - name: "Python Function Request"
+    input: "Write a Python function to reverse a string"
+    must_have: ["def", "return", "[::-1]", "python"]
+    must_not_have: ["cannot write code", "don't know how"]
+
+  - name: "Bug Fix Request"
+    input: "Fix this code: print(hello world)"
+    must_have: ["quotes", "syntax", "print", "hello world"]
+    must_not_have: ["looks fine", "no error", "correct"]
+
+  - name: "Best Practices Question"
+    input: "What are Python coding best practices?"
+    must_have: ["PEP", "naming", "documentation", "testing"]
+    must_not_have: ["don't matter", "any way", "no standards"]
